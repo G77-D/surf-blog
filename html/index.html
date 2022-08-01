@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
-<body>
+<body id="home">
     <nav class="navbar">
         <div class="continer">
             <img class="logo" src="" alt="">
@@ -41,5 +41,10 @@
 
         <script scr ="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script scr="js/simple-light.mins.js"></script>
+        <script>
+            $(function() {
+        const $gallery = $('.gallery a').simpleLightbox();
+    });
+        </script>
     </body>
     </html
