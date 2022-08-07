@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-    .root{
+    :root{
     --primary-color:#333;
-    --secondary-color:#444; 
+    --secondary-color:rgb(67, 5, 5); 
     --overlay-color:rgba(0,0,0,0.7);
     }
 
@@ -10,26 +10,116 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
     padding:0;
 }
 
 body{
-    font-family: 'Abel', sans-serif;
-    line-height:1.5;
+    font-family: 'Abel' sans-serif;
+    line-height: 1.6;
     color:#333;
-    font-size:1.1rem;
+    font-size: 1.1rem;
 }
 
-h1,h2,h3, h4 {
-    line-height:1.3;
+h1, h2, h3, h4{
+    line-height: 1.3;
 }
 
-a {
-    color: var(--secondary-color);
-    text-decoration: none; /* remove underline /*/
+    a{
+    color:var(--secondary-color);
+    text-decoration: none;
+    }
+
+ul {
+    list-style: none;
 }
 
-ul{
-    list-style:none;
+img{
+width:100%;
+}
+
+.container{
+    max-width:1100px;
+    margin: auto;
+    overflow:hidden;
+    padding: 2rem;
+}
+
+    .logo{
+    width:100px;
+    }
+    .navabr{
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.navbar .container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navbar .nav {
+    justify-self: flex-end; 
+    display: flex;
+    align-items: center;
+justify-content: center;
+
+}
+
+.navbar .nav a {
+padding:0 1rem;  /* create space for nav list right and left */
+}
+
+
+.navbar .nav a:hover{
+    color:#555;
+}
+.img-a{
+width:50%;
+}
+.section-a{
+margin: 2rem 0;
+}
+
+.section-a .container {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-a h1 {
+    font-size:4rem;
+    color:var(--primary-color);
+}
+
+    .section-a p {
+    margin:1rem 0;
+    }
+
+.btn {
+    display: inline-block;
+    background:#444;
+    color: rgb(202, 202, 202);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+
+/*section------------*/
+.section-b{
+position: relative;
+background: url('../images/wave\ surfer\ K.jpeg') no-repeat bottom center/cover;
+height:600px;
+}
+
+
+
+
+.btn:hover{
+background:var(--secondary-color)
 }
