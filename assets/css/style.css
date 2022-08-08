@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-    :root{
+    :root{  /*-- dont forget the :*/
     --primary-color:#333;
     --secondary-color:rgb(67, 5, 5); 
-    --overlay-color:rgba(0,0,0,0.7);
+    --overlay-color:rgba(7, 3, 3, 0.2);
     }
 
 
@@ -21,17 +21,17 @@ body{
     font-size: 1.1rem;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4{  /* notes make changes create class */
     line-height: 1.3;
 }
 
     a{
-    color:var(--secondary-color);
-    text-decoration: none;
-    }
+    color:var(--secondary-color); /* create list class */
+    text-decoration: none; /* removes underline*/
+    } 
 
 ul {
-    list-style: none;
+    list-style: none; /* removes bult points*/
 }
 
 img{
@@ -39,15 +39,16 @@ width:100%;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1100px; /* max width*/
     margin: auto;
-    overflow:hidden;
+    overflow:hidden; /* This stop the image pop out */
     padding: 2rem;
 }
 
     .logo{
     width:100px;
     }
+
     .navabr{
     font-size: 1.2rem;
     padding-top: 0.3rem;
@@ -60,7 +61,7 @@ width:100%;
 }
 
 .navbar .nav {
-    justify-self: flex-end; 
+justify-self: flex-end; 
     display: flex;
     align-items: center;
 justify-content: center;
@@ -95,7 +96,7 @@ margin: 2rem 0;
     color:var(--primary-color);
 }
 
-    .section-a p {
+    .section-a p { /* create classes */
     margin:1rem 0;
     }
 
@@ -118,8 +119,39 @@ height:600px;
 }
 
 
+.section-b-inner{
+color:#fff;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin:auto;
+max-width: 860px;
+padding:5rem 0;
+}
 
+.section-b-inner h3{
+font-size:2rem;
+}
+.section-b-inner h2 {
+    font-size: 5rem;
+    margin-top:1rem;
+}
+
+.section-b-inner{
 
 .btn:hover{
 background:var(--secondary-color)
 }
+
+
+    .overlay{
+        position: absolute; /* You want the Image to be absolute in the section*/
+    top: 0;
+    left: 0;
+    height: 100%; /* we want the image to Expand in the section */
+    width: 100%;
+    background-color: var(--overlay-color);
+    }
